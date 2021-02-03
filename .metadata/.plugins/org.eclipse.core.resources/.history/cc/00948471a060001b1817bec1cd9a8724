@@ -1,8 +1,0 @@
-package decisao;
-
-public class DesafioDecisaoSimples {
-	public static void main(String[] args) {
-		
-		
-	}
-}

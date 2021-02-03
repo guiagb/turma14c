@@ -18,6 +18,7 @@ public class Cargo implements Comparable<Cargo>{
 	@Override
 	public int compareTo(Cargo outro) {
 		return this.nome.compareTo(outro.nome);
+		//return -this.nome.compareTo(outro.nome);
 	}
 	public Cargo() {
 		super();

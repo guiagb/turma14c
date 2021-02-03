@@ -1,7 +1,0 @@
-package decisao;
-
-public class DesafioDecisaoEncadeada {
-	public static void main(String[] args) {
-		
-	}
-}
