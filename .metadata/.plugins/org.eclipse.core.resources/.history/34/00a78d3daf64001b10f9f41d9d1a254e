@@ -1,0 +1,41 @@
+package br.com.heranca.beans;
+
+public class Tecnologo extends Formacao {
+	private boolean planoEstendido;
+
+	
+	public void calcularMensalidade(double fator) {
+	}
+	
+	
+	public void setAll(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	public Tecnologo() {
+		super();
+	}
+
+	
+	public Tecnologo(boolean planoEstendido) {
+		super();
+		this.planoEstendido = planoEstendido;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Tecnologo [planoEstendido=" + planoEstendido + "]";
+	}
+
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+}

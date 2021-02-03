@@ -1,0 +1,32 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		/*
+		 * solicita idade e nome em loop 
+		 * dps exibe :
+		 * 	quantidade de pessoas maiores de idade
+		 *  media entr todas as idades 
+		 *  a pessoa mais experiente (nome e idade)
+		 *  a pessoa mais jovem (nome e idade)
+		 */
+		
+		String nome,experiente,jovem ="";
+		short idade=0,maiores=0,maior_idade=0,menor_idade =0;
+		float media = 0;
+		char continua ='S';
+		for(int i=1;continua=='S';i++) {
+			nome = JOptionPane.showInputDialog("nome");
+			idade = Short.parseShort(JOptionPane.showInputDialog("idade"));
+			media = (media + idade)/i;
+			if(idade>maior_idade) {
+				
+			}
+			continua = JOptionPane.showInputDialog("deseja continuar (S)").toUpperCase().charAt(0);
+		}
+	}
+
+}

@@ -1,0 +1,24 @@
+package br.com.heranca.beans;
+
+public class Bacharelado {
+	private String projetoConclusao;
+	private int cargaHorarioEstagio;
+	
+	public void calcularMensalidade() {
+		
+	}
+	
+	public String getProjetoConclusao() {
+		return projetoConclusao;
+	}
+	public void setProjetoConclusao(String projetoConclusao) {
+		this.projetoConclusao = projetoConclusao;
+	}
+	public int getCargaHorarioEstagio() {
+		return cargaHorarioEstagio;
+	}
+	public void setCargaHorarioEstagio(int cargaHorarioEstagio) {
+		this.cargaHorarioEstagio = cargaHorarioEstagio;
+	}
+	
+}

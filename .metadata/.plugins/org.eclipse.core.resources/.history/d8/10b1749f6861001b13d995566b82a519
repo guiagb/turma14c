@@ -1,0 +1,28 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		short n1 = Short.parseShort(JOptionPane.showInputDialog("Jogador 1: Insira um numero entre 1 - 10"));
+		short n2 = 0;
+		int chances = 0;
+		String dica = "";
+		do {	
+			n2 = Short.parseShort(JOptionPane.showInputDialog("Jogador 2: Tente advinhar o numero 1 - 10"));
+			chances = chances + 1 ;
+			if (n1!=n2) {
+				if (n1>n2) {
+					dica = "maior";
+				} else dica = "menor";
+				JOptionPane.showMessageDialog(null, "hmmm.. você errou. O numero é "+dica+" do que o "+n2);
+				System.out.println("hmmm.. você errou. O numero é "+dica+" do que o "+n2);
+			}
+		} while(n1!=n2);
+		
+		JOptionPane.showMessageDialog(null, "Parabéns Jogador 2, você acertou na "+chances+" tentativa"+"! O número escolhido foi "+n1);
+		System.out.println("Parabéns Jogador 2, você acertou na "+chances+" tentativa"+"! O número escolhido foi "+n1);
+	}
+
+}

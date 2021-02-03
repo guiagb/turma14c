@@ -1,0 +1,15 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+		int tabuada = Integer.parseInt(JOptionPane.showInputDialog("tabuada"));
+		for(int i=0;i==10;i++) {
+			System.out.println(tabuada*i);
+		}
+
+	}
+
+}

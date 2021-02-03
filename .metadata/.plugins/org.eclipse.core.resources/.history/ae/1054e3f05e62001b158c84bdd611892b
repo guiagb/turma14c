@@ -1,0 +1,12 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.Produto;
+
+public class ImplementarProdutoConstrutor {
+	
+	public static void main(String[] args) {
+		Produto produto = new Produto(1000, 25, "camiseta", (float)25.9, (float)15.9);
+	}
+
+   
+}

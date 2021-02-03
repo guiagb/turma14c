@@ -1,0 +1,44 @@
+package br.com.heranca.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.heranca.beans.Bacharelado;
+import br.com.heranca.beans.Formacao;
+import br.com.heranca.beans.Medio;
+import br.com.heranca.beans.Tecnologo;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		char resp = JOptionPane.showInputDialog("qual formacao deseja? \n<B> Bacharelado\n<T> Teconologo\n<M> Medio").toUpperCase().charAt(0);
+		Formacao formacao = new Formacao();
+		if(resp=='B') {
+			formacao = new Bacharelado("sistemas", 8, 480, 1700, "tcc sistemas", 580);
+			bacharel.calcularMensalidade(200);
+			bacharel.definirDuracao();
+			System.out.println(bacharel.toString());
+			
+		} else if (resp=='T') {
+			formacao = new Tecnologo();
+			Tecnologo tecnologo = new Tecnologo("analise", 8, 120, 800, true);
+			tecnologo.calcularMensalidade(200);
+			tecnologo.definirDuracao();
+			System.out.println(tecnologo.toString());
+			
+		} else if (resp=='M') {
+			formacao = new Medio();
+			Medio medio = new Medio("1 ano", 8, 480, 650, "A");
+			medio.calcularMensalidade(100);
+			medio.definirDuracao();
+			System.out.println(medio.toString());
+			
+		}else {
+			System.out.println("opção invalida");
+			System.exit(0);
+		}
+		
+		
+		
+	}
+
+}

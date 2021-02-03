@@ -1,0 +1,13 @@
+package br.com.elevador.modelo;
+
+public class Elevador {
+	byte andarMaximo, andarMinimo, capacidadePessoas, qtdePessoas, andarAtual;
+	String nome;
+
+	public void entrar1() {
+		if (qtdePessoas-capacidadePessoas==0) {
+			qtdePessoas = (byte) (qtdePessoas + 1) ;
+		}
+	}
+
+}

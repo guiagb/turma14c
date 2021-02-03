@@ -1,0 +1,23 @@
+package br.com.universidade.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.beans.Aluno;
+
+public class ImplementarAluno {
+
+	public static void main(String[] args) {
+		while(JOptionPane.showConfirmDialog(null, "Lançar um aluno?", "Titulo",JOptionPane.YES_NO_OPTION)==0) {
+			Aluno aluno = new Aluno();
+			aluno.setNome(JOptionPane.showInputDialog("nome: ").toLowerCase());
+			aluno.setEmail(JOptionPane.showInputDialog("email: ").toLowerCase());
+			aluno.setRm(Integer.parseInt(JOptionPane.showInputDialog("RM: ")));
+			
+			System.out.println("conferindo....");
+			System.out.println(aluno.getAll());
+			System.out.println("usuário: "+aluno.getUsuario(email));
+		}
+
+	}
+
+}

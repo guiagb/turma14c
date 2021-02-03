@@ -1,0 +1,13 @@
+package br.com.elevador.teste;
+
+import br.com.elevador.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		Elevador elevador = new Elevador();
+		elevador.inicializar(39, 0, 15, "Guilherme");
+
+	}
+
+}

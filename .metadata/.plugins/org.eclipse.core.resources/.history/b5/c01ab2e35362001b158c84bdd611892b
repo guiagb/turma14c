@@ -1,0 +1,13 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.Produto;
+
+public class ImplementarProduto {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto();
+		produto.setAll(1000, "CAMISETA PRETA", (float) 29.90, (float)17.90, 25);
+
+	}
+
+}

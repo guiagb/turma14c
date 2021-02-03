@@ -1,0 +1,34 @@
+package br.com.concessionaria.teste;
+
+import br.com.concessionaria.modelo.Veiculo;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+			
+		//instanciando um objeto
+		Veiculo objeto = new Veiculo();
+		objeto.preencherModelo("uno");
+		objeto.preencherPlaca("xxxxxx");
+		objeto.preencherStatus("SIM");
+		objeto.preencherValor((float)4000);
+		objeto.preencherVelocidade((float)40);
+		System.out.println(objeto.retornaResumo());
+		objeto.desligar();
+		System.out.println(objeto.retornaResumo());
+		objeto.ligar();
+		System.out.println(objeto.retornaResumo());
+		objeto.acelerar(50);
+		System.out.println(objeto.retornaResumo());
+		objeto.brecar();
+		System.out.println(objeto.retornaResumo());
+		System.out.println(objeto.retornarValor());
+		objeto.aplicarReajuste((float)5);
+		System.out.println(objeto.retornarValor());
+		objeto.retornaDesconto();
+		System.out.println(objeto.retornarValor());
+		
+		
+	}
+
+}

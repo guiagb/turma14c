@@ -1,0 +1,16 @@
+package br.com.universidade.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.beans.Aluno;
+import br.com.universidade.beans.Endereco;
+
+public class ImplementarAluno {
+
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno(69817, "guilherme.agb94@gmail.com", "Guilherme");
+		Endereco endereco = new Endereco("rua francisco perotti", "70", "casa", "bela vista", "osasco", "Sao Paulo", "06070050");
+		
+	}
+
+}

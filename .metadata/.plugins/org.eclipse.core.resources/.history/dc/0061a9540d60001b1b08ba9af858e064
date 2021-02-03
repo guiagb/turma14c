@@ -1,0 +1,17 @@
+package variaveis;
+
+public class TipoString {
+
+	public static void main(String[] args) {
+		String email = "guilherme.garcia-bueno@itau-Unibanco.com.br";
+		System.out.println(email);
+		System.out.println(email.toLowerCase());
+		System.out.println(email.charAt(2));
+		System.out.println(email.contains("@"));
+		System.out.println(email.replace(" ",""));
+		System.out.println(email.indexOf("@"));
+		System.out.println(email.substring(0,email.length()/2));
+		System.out.println(email.substring(email.length()/2));
+		System.out.println(email.substring(0,email.indexOf("@")));
+	}
+}

@@ -1,0 +1,84 @@
+package br.com.concessionaria.modelo;
+
+public class Veiculo {
+	private String modelo,placa;
+	private float valor,velocidade_atual;
+	private boolean status;
+
+	
+	//seta
+	public void preencherModelo(String param) {
+		if (param.length()>5) {
+			modelo = param.substring(0,5);
+		} else {
+			modelo = param.toUpperCase();
+		}
+	}
+	public void preencherPlaca(String param) {
+		placa = param;
+	}
+	public void preencherValor(Float param) {
+		valor = param;
+	}
+	public void preencherVelocidade(Float param) {
+		velocidade_atual = param;
+	}
+	public void preencherStatus(String param) {
+		if(param.toUpperCase().equals("SIM")) {
+			status = true;
+		} else {
+			status = false;
+		}
+	}
+	
+	
+	
+	public float retornaDesconto() {
+		return valor*(float) 0.95;
+	}
+	public String aplicarReajuste(Float param) {
+		return "Valor atualizado: "+valor*(param/100);
+	}
+	public void acelerar(float param) {
+		if (status = true) {
+			velocidade_atual = param + velocidade_atual;
+		}
+	}
+	public void brecar() {
+		if (status = true) {
+			velocidade_atual = 0;
+		}
+	}
+	public String desligar() {
+		velocidade_atual = 0;
+		status = false;
+		return "Desligado";
+	}
+	public String ligar() {
+		status = true;
+		return "Ligado";
+	}
+	public String retornaResumo() {
+		return "Modelo: "+modelo+" Status: "+status+" Velocidade: "+velocidade_atual;
+	}
+
+	
+	//retorna
+	public String retornarModelo() {
+		return modelo;
+	}
+	public String retornarPlaca() {
+		return placa;
+	}
+	public Float retornarValor() {
+		return valor;
+	}
+	public Float retornarVelocidade() {
+		return velocidade_atual;
+	}
+	public Boolean retornarStatus() {
+		return status;
+	}
+	
+	
+}

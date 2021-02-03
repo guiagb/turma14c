@@ -1,0 +1,38 @@
+package br.com.heranca.beans;
+
+public class Medio extends Formacao{
+	private String tipo;
+
+	
+	public void calcularMensalidade(double fator) {
+		System.out.println(super.getDuracao()*fator*500);
+	}
+	
+	public void setAll(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	public Medio() {
+		super();
+	}
+	
+	public Medio(String tipo) {
+		super();
+		this.tipo = tipo;
+	}
+
+	@Override
+	public String toString() {
+		return "Medio [tipo=" + tipo + "]";
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+}

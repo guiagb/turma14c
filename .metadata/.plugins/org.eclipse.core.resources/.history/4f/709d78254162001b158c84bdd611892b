@@ -1,0 +1,9 @@
+package br.com.universidade.beans;
+
+public class Aluno {
+	private int rm;
+	private String email;
+	private String nome;
+	
+	
+}

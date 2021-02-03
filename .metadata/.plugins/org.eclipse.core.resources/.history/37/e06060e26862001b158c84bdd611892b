@@ -1,0 +1,67 @@
+package br.com.universidade.beans;
+
+public class Aluno {
+	private int rm;
+	private String email;
+	private String nome;
+	private String endereco;
+	
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	public Aluno(){
+		
+	}
+	public Aluno(int rm, String email, String nome, String endereco) {
+		super();
+		this.rm = rm;
+		this.email = email;
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+	@Override
+	public String toString() {
+		return "Aluno [rm=" + rm + ", email=" + email + ", nome=" + nome + "]";
+	}
+	
+	
+	public String getAll() {
+		return "RM " + getRm()+" Nome: "+getNome()+" Email: "+getEmail();
+	}
+	public void setAll(int rm, String email, String nome) {
+		setRm(rm);
+		setEmail(email);
+		setNome(nome);
+	}
+	public String getUsuario() {
+		if (email.contains("@")) {
+			return email.substring(0,email.indexOf("@"));
+		}else return email;
+		
+	}
+	public int getRm() {
+		return rm;
+	}
+	public void setRm(int rm) {
+		this.rm = rm;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+	
+	
+}

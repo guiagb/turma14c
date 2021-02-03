@@ -1,0 +1,20 @@
+package br.com.heranca.beans;
+
+public class Tecnologo {
+	private boolean planoEstendido;
+
+	
+	public void calcularMensalidade(double fator) {
+	
+	}
+	
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+}

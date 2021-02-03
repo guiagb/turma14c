@@ -1,0 +1,12 @@
+package variaveis;
+
+public class TiposDados {
+	public static void main(String[] args) {
+		String nome = "Guilherme";
+		int idade = 26;
+		double altura = 1.81;
+		System.out.println("Nome: "+nome);
+		System.out.println("Idade: "+idade);
+		System.out.println("Altura: "+altura);
+	}
+}

@@ -1,0 +1,58 @@
+package br.com.concessionaria.modelo;
+
+public class Veiculo {
+	private String modelo,placa;
+	private float valor,velocidade_atual;
+	private boolean status;
+	private short reajuste;
+
+	
+	//seta
+	public void preencherModelo(String param) {
+		if (param.length()>5) {
+			modelo = param.substring(0,5);
+		} else {
+			modelo = param.toUpperCase();
+		}
+	}
+	public void preencherPlaca(String param) {
+		placa = param;
+	}
+	public void preencherValor(Float param) {
+		valor = param;
+	}
+	public void preencherVelocidade(Float param) {
+		velocidade_atual = param;
+	}
+	public void preencherStatus(String param) {
+		if(param.toUpperCase().equals("SIM")) {
+			status = true;
+		} else {
+			status = false;
+		}
+	}
+	
+	public void aplicarReajuste(Short param) {
+		reajuste = param;
+	}
+
+	
+	//retorna
+	public String retornarModelo() {
+		return modelo;
+	}
+	public String retornarPlaca() {
+		return placa;
+	}
+	public Float retornarValor() {
+		return valor;
+	}
+	public Float retornarVelocidade() {
+		return velocidade_atual;
+	}
+	public Boolean retornarStatus() {
+		return status;
+	}
+	
+	
+}

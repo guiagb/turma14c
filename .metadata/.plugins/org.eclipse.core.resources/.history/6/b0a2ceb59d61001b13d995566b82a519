@@ -1,0 +1,18 @@
+package br.com.concessionaria.modelo;
+
+public class Veiculo {
+	private String modelo,placa;
+	private float valor,velocidade_atual;
+	private boolean status;
+
+	public void preencherModelo(String param) {
+		if (param.length()<20) {
+			modelo = "dado invalido";
+		} else {
+			modelo = param.toUpperCase();
+		}
+	}
+	public String retornarModelo() {
+		return modelo;
+	}
+}

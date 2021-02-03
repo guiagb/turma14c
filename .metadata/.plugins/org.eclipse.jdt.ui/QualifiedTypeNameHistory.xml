@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.util.Magica"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.beans.Endereco"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.beans.ClientePJ"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.beans.Cliente"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.implementacao.ImplementarCliente2"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.beans.Venda"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.beans.ClientePF"/>
+<fullyQualifiedTypeName name="br.com.heranca.beans.Formacao"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,55 @@
+package br.com.ecommerce.beans;
+
+public class Produto {
+	private int id, qtde;
+	private String descricao;
+	private float valorVenda, valorCompra;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	
+	public float getTotalCompra() {
+		return 0;
+	}
+	public float getTotalVenda() {
+		return 0;
+	}
+	public void atualizarValores(float porc) {
+		
+	}
+	public String getAll() {
+		return "";
+	}
+	public void setAll(int id, String descricao, float valorVenda, float valorCompra, int qtde) {
+		
+	}
+}

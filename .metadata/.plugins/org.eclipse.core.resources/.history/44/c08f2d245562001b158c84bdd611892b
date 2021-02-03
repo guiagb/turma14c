@@ -1,0 +1,58 @@
+package br.com.ecommerce.beans;
+
+public class Produto {
+	private int id, qtde;
+	private String descricao;
+	private float valorVenda, valorCompra;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao.toLowerCase();
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	
+	public float getTotalCompra() {
+		return getQtde()*getValorCompra();
+	}
+	public float getTotalVenda() {
+		return getQtde()*getValorVenda();
+	}
+	public void atualizarValores(float porc) {
+		setValorVenda(porc);
+	}
+	public String getAll() {
+		return "-ID " + getId()+" \n-Descrição: "+getDescricao()+" \n-valor venda: R$"+getValorVenda()+" \n-valor compra: R$"+getValorCompra();
+	}
+	public void setAll(int id, String descricao, float valorVenda, float valorCompra, int qtde) {
+		setId(id);
+		setDescricao(descricao);
+		setValorVenda(valorVenda);
+		setValorCompra(valorCompra);
+	}
+}

@@ -1,0 +1,15 @@
+package br.com.concessionaria.teste;
+
+import br.com.concessionaria.modelo.Veiculo;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+			
+		//instanciando um objeto
+		Veiculo objeto = new Veiculo();
+		objeto.preencherModelo("uno");
+		System.out.println(objeto.retornarModelo(objeto.preencherModelo("uno")));
+	}
+
+}

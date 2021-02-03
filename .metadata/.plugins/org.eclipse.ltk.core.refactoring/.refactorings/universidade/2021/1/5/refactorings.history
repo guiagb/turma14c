@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Endereco.java&apos; to &apos;ecommerce/src/br.com.ecommerce.beans&apos;&#x0D;&#x0A;- Original project: &apos;universidade&apos;&#x0D;&#x0A;- Destination element: &apos;ecommerce/src/br.com.ecommerce.beans&apos;&#x0D;&#x0A;- Original element: &apos;br.com.universidade.beans.Endereco.java&apos;" description="Copy compilation unit" destination="=ecommerce/src&lt;br.com.ecommerce.beans" element1="/src&lt;br.com.universidade.beans{Endereco.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1611949860392" units="1" version="1.0"/>
+</session>

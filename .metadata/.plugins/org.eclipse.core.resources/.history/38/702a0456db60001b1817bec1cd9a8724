@@ -1,0 +1,18 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploDo {
+
+	public static void main(String[] args) {
+		char continua='N';
+		do{
+			int n1 = Integer.compare(JOptionPane.showinput("Insira n1"));
+			int n2 = Integer.compare(JOptionPane.showinput("Insira n2"));
+			System.out.println("Resultado: "+ (n1+n2));
+			continua = JOptionPane.showInputDialog("Quer continuar? (S)").toUpperCase().charAt(0);
+		}while(continua=='S');
+
+	}
+
+}

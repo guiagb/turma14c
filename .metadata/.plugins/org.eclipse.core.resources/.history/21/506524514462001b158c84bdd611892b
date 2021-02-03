@@ -1,0 +1,14 @@
+package br.com.universidade.implementacao;
+
+import javax.swing.JOptionPane;
+
+public class ImplementarAluno {
+
+	public static void main(String[] args) {
+		while(JOptionPane.showConfirmDialog(null, "Lançar um aluno?", JOptionPane.YES_NO_OPTION)==0) {
+			
+		}
+
+	}
+
+}

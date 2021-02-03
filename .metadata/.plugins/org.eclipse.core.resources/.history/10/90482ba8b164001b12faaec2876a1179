@@ -1,0 +1,13 @@
+package br.com.heranca.implementacao;
+
+import javax.swing.JOptionPane;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		char resp = JOptionPane("digite <f> para fisica ou <j> para juridica").charAt(0);
+		if(resp=='F') {
+
+	}
+
+}

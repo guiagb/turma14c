@@ -1,0 +1,8 @@
+package br.com.elevador.modelo;
+
+public class Elevador {
+	byte andarMaximo, andarMinimo, capacidadePessoas, qtdePessoas, andarAtual;
+	String nome;
+	
+	
+}

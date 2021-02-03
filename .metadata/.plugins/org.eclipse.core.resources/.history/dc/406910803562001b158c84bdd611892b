@@ -1,0 +1,39 @@
+package br.com.elevador.modelo;
+
+public class Elevador {
+	byte andarMaximo, andarMinimo, capacidadePessoas, qtdePessoas, andarAtual;
+	String nome;
+
+	public void entrar1() {
+		if (qtdePessoas+1<=capacidadePessoas) {
+			qtdePessoas = (byte) (qtdePessoas + 1) ;
+		}
+	}
+	
+	public void entrar2(byte qtde) {
+		if (qtdePessoas+qtde<=capacidadePessoas) {
+			qtdePessoas = (byte) (qtdePessoas + 1) ;
+		}
+	}
+	
+	public void sair() {
+		if (qtdePessoas-1>=0) {
+			qtdePessoas = (byte) (qtdePessoas - 1) ;
+		}
+	}
+	
+	public String subir() {
+		if (andarAtual<andarMaximo) {
+			andarAtual =+1;
+			return "Indo para o andar "+andarAtual;
+		}else return "Você já está no ultimo andar";
+	}
+	
+	public String descer() {
+		if (andarAtual>andarMinimo) {
+			andarAtual =-1;
+			return "Indo para o andar "+andarAtual;
+		}else return "Você já está no terreo andar";
+	}
+
+}
