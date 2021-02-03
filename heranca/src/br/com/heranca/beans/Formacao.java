@@ -2,15 +2,12 @@ package br.com.heranca.beans;
 
 import br.com.heranca.util.PadraoFormacao;
 
-public class Formacao implements PadraoFormacao {
+public class Formacao  {
 	private String formacao;
 	private int periodo, duracao;
 	private double mensalidade;
 
-	@Override
-	public String calculcarDesconto(float porc) {
-		return null;
-	}
+
 	
 	public void calcularMensalidade(double fator) {	
 	
