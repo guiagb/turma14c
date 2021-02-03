@@ -7,7 +7,7 @@ import java.util.List;
 public class TesteList {
 
 	public static void main(String[] args) {
-		int numeros[] = new int[5];
+		//int numeros[] = new int[5];
 		/*
 		 * o vetor gera limitacao:
 		 * quantidade de dados chumbada
